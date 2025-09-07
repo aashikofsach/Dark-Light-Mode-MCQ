@@ -3,11 +3,14 @@ import { BrowserRouter, Route, Router, Routes } from "react-router-dom"
 import Home from "./pages/Home"
 import About from "./pages/About"
 import Blog from "./pages/Blog"
+import Navbar from "./components/Navbar"
 
 function App() {
 
   return (
    <BrowserRouter>
+
+   <Navbar/>
    
    <Routes>
 
