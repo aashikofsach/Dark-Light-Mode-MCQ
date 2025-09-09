@@ -4,3 +4,12 @@
   padding: 2rem;
   text-align: center;
 }
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 92vh;
+}
+.navbar {
+  height: 8vh;
+}
