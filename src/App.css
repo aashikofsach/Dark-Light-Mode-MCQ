@@ -14,4 +14,10 @@
 .navbar {
   height: 8vh;
   background-color: yellow;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar a {
+  text-decoration: none;
+  color: inherit;
 }
