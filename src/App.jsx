@@ -4,23 +4,27 @@ import Home from "./pages/Home"
 import About from "./pages/About"
 import Blog from "./pages/Blog"
 import Navbar from "./components/Navbar"
+import ThemeProvider from "./theme-context"
 
 function App() {
 
   return (
-   <BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
 
-   <Navbar/>
-   
-   <Routes>
+        <Navbar />
 
-<Route path="/" element={<Home/>}/>
-<Route path="/about" element={<About/>}/>
-<Route path="/blog" element={<Blog/>}/>
+        <Routes>
 
-   </Routes>
-   </BrowserRouter>
-   
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/blog" element={<Blog />} />
+
+        </Routes>
+      </BrowserRouter>
+
+    </ThemeProvider>
+
   )
 }
 

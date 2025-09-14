@@ -1,7 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useTheme } from '../theme-context'
 
 function Navbar() {
+ const theme =  useTheme();
+ console.log(theme)
   return (
     <div className='navbar'>
         <Link to="/">Home</Link>
