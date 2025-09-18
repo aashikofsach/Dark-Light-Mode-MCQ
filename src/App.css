@@ -11,12 +11,12 @@
 }
 
 :root[data-theme="dark"] {
-  --bg-color: #333333
+  --bg-color: #333333;
   --text-color: #ffffff;
   --heading-color: #dddddd;
 }
 
-body{
+body {
   background-color: var(--bg-color);
 }
 
@@ -32,6 +32,7 @@ body{
   flex-direction: column;
   height: 92vh;
   /* background-color: red; */
+  background-color: var(--bg-color);
 }
 .navbar {
   height: 8vh;
